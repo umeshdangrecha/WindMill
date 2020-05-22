@@ -1,0 +1,116 @@
+.mainImg img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+}
+.cloud img{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+}
+
+.cloud1 img{
+    width:15%;
+    height:10%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    animation: cloudMove 45s linear infinite normal ;
+}
+.cloud2 img{
+    width:10%;
+    height:8%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    animation: cloudMove 35s linear infinite reverse ;
+}
+.cloud3 img{
+    width:8%;
+    height:5%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    animation: cloudMove 55s linear infinite normal ;
+}
+.stand1 img{
+    position: absolute;
+    top: 27.8%;
+    left:5%;
+    height: 15%;
+}
+.fan1 img{
+    position: absolute;
+    top: 20%;
+    left:2%;
+    height:15%;
+    animation: windMill1 0.2s linear infinite normal ;
+
+}
+
+
+.stand2 img{
+    position: absolute;
+    top: 20.8%;
+    left:38%;
+    height: 5%;
+}
+.fan2 img{
+    position: absolute;
+    top: 18.1%;
+    left:37.05%;
+    height: 5%;
+    animation: windMill1 0.1s linear infinite normal ;
+
+}
+.stand3 img{
+    position: absolute;
+    top: 18%;
+    right:10%;
+    height: 20%;
+}
+.fan3 img{
+    position: absolute;
+    top: 8%;
+    right:6%;
+    height: 20%;
+    animation: windMill1 0.8s linear infinite normal ;
+
+}
+@keyframes windMill1{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes cloudMove{
+    0%
+    {
+        left:-15%;
+    }
+    10%
+    {
+        top:6%
+    }
+    20%
+    {
+        top:10%
+    }
+    30%
+    {
+        top:7%
+    }
+    40%
+    {
+        top:6%
+    }
+    100%{
+       left: 90%;
+       top:8%
+    }
+}
